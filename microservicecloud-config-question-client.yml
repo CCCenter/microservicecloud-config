@@ -25,7 +25,6 @@ mybatis-plus:
     type-aliases-package: com.codeLife.cloud.beans           # 所有Entity别名类所在包
     mapper-locations: classpath:/mapper/**/*.xml       # mapper映射文件
     - classpath:mybatis/mapper/**.xml
-
 eureka:
     client: #客户端注册进eureka服务列表内
         service-url:
@@ -33,7 +32,6 @@ eureka:
     instance:
         instance-id: microservicecloud-question8001 # 实例名称
         prefer-ip-address: true  # 显示IP
-    
 info:
     app.name: microservicecloud
     company.name: www.bbu.com
@@ -43,7 +41,6 @@ info:
 
 server:
     port: 8001
-    
 spring:
     profiles: test
     application:
@@ -64,15 +61,13 @@ mybatis-plus:
     type-aliases-package: com.codeLife.cloud.beans           # 所有Entity别名类所在包
     mapper-locations: classpath:/mapper/**/*.xml       # mapper映射文件
     - classpath:mybatis/mapper/**.xml
-
 eureka:
     client: #客户端注册进eureka服务列表内
         service-url:
-        defaultZone: http://eureka7001.com:7001/eureka/
+            defaultZone: http://eureka7001.com:7001/eureka/
     instance:
         instance-id: microservicecloud-question8001 # 实例名称
         prefer-ip-address: true  # 显示IP
-    
 info:
     app.name: microservicecloud
     company.name: www.bbu.com
