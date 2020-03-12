@@ -1,11 +1,10 @@
 spring:
     profiles:
         active:
-        -dev
+        - dev
 ---
 server:
     port: 8001
-    
 spring:
     profiles: dev
     application:
@@ -28,18 +27,18 @@ mybatis-plus:
     - classpath:mybatis/mapper/**.xml
 
 eureka:
-  client: #客户端注册进eureka服务列表内
-    service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/
-  instance:
-    instance-id: microservicecloud-question8001 # 实例名称
-    prefer-ip-address: true  # 显示IP
+    client: #客户端注册进eureka服务列表内
+        service-url:
+            defaultZone: http://eureka7001.com:7001/eureka/
+    instance:
+        instance-id: microservicecloud-question8001 # 实例名称
+        prefer-ip-address: true  # 显示IP
     
 info:
-  app.name: microservicecloud
-  company.name: www.bbu.com
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
+    app.name: microservicecloud
+    company.name: www.bbu.com
+    build.artifactId: $project.artifactId$
+    build.version: $project.version$
 ---
 
 server:
@@ -67,15 +66,15 @@ mybatis-plus:
     - classpath:mybatis/mapper/**.xml
 
 eureka:
-  client: #客户端注册进eureka服务列表内
-    service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/
-  instance:
-    instance-id: microservicecloud-question8001 # 实例名称
-    prefer-ip-address: true  # 显示IP
+    client: #客户端注册进eureka服务列表内
+        service-url:
+        defaultZone: http://eureka7001.com:7001/eureka/
+    instance:
+        instance-id: microservicecloud-question8001 # 实例名称
+        prefer-ip-address: true  # 显示IP
     
 info:
-  app.name: microservicecloud
-  company.name: www.bbu.com
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
+    app.name: microservicecloud
+    company.name: www.bbu.com
+    build.artifactId: $project.artifactId$
+    build.version: $project.version$
